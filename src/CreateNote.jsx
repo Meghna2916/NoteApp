@@ -5,8 +5,8 @@ import AddIcon from '@mui/icons-material/Add';
 const CreateNote =(props)=>{
 const[expand, setExpand]=useState(false);
 const [note,setNote]=useState({
-    title:" ",
-    content:" ",
+    title:"",
+    content:"",
 });
 
 const inputEvent =(event)=>{
@@ -25,8 +25,8 @@ const inputEvent =(event)=>{
 const addEvent =()=>{
 props.passNote(note);
 setNote({
-    title:" ",
-    content:" ",
+    title:"",
+    content:"",
 }); 
 }
 
